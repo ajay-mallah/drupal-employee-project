@@ -1,0 +1,100 @@
+uuid: 72b11741-12f1-430b-85f0-7869cd18eba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.blog_comment
+    - field.field.comment.blog_comment.comment_body
+    - field.field.comment.blog_comment.field_email
+    - field.field.comment.blog_comment.field_homepage_of_your_website
+    - field.field.comment.blog_comment.field_your_name
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: comment
+          context_mapping: {  }
+        components:
+          5f16aa3d-3b62-4b45-82dd-e44ebf11582d:
+            uuid: 5f16aa3d-3b62-4b45-82dd-e44ebf11582d
+            region: content
+            configuration:
+              id: 'field_block:comment:blog_comment:field_your_name'
+              label: 'Your name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          d0a852f9-2e7c-45d9-aae0-8d37a9a03f6a:
+            uuid: d0a852f9-2e7c-45d9-aae0-8d37a9a03f6a
+            region: content
+            configuration:
+              id: 'field_block:comment:blog_comment:subject'
+              label: Subject
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: comment.blog_comment.default
+targetEntityType: comment
+bundle: blog_comment
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_homepage_of_your_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_your_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_email: true
+  links: true

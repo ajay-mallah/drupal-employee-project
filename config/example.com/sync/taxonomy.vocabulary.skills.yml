@@ -1,0 +1,8 @@
+uuid: 7bcd29bd-6039-4e60-a41e-436f619eac16
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tech skills'
+vid: skills
+description: 'Vocabulary for the technical skills. '
+weight: 0

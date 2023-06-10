@@ -1,0 +1,8 @@
+uuid: a50a2ba2-4f79-439e-9a8b-da002394cdb8
+langcode: en
+status: true
+dependencies: {  }
+name: Designation
+vid: designation
+description: 'title or designation of the employees'
+weight: 0

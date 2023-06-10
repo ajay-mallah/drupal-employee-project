@@ -1,0 +1,20 @@
+uuid: 57f4806c-d56f-4798-bf21-98bb45167447
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_emp_tech_skills
+field_name: field_emp_tech_skills
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

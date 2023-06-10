@@ -1,0 +1,30 @@
+uuid: f926e449-2f74-4afb-b998-b563e6ce321c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: views_block__projects_block_2
+theme: bootstrap5
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:projects-block_2'
+settings:
+  id: 'views_block:projects-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+  exposed: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

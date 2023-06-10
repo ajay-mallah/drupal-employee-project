@@ -1,0 +1,29 @@
+uuid: baf91aba-e6df-49de-a492-5d04819b8a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.background
+id: paragraph.background.field_background_icon
+field_name: field_background_icon
+entity_type: paragraph
+bundle: background
+label: icon
+description: 'Image icon for the background field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

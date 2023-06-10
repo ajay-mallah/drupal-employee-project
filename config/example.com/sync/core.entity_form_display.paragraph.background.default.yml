@@ -1,0 +1,33 @@
+uuid: 0e7c1165-decb-4c77-aaf4-04f689673469
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.background.field_background_icon
+    - field.field.paragraph.background.field_background_title
+    - paragraphs.paragraphs_type.background
+  module:
+    - media_library
+id: paragraph.background.default
+targetEntityType: paragraph
+bundle: background
+mode: default
+content:
+  field_background_icon:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_background_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

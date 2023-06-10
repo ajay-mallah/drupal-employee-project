@@ -1,0 +1,23 @@
+uuid: ea735431-f204-405c-a890-055a38424ca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.blog_comment
+    - field.storage.comment.field_homepage_of_your_website
+  module:
+    - link
+id: comment.blog_comment.field_homepage_of_your_website
+field_name: field_homepage_of_your_website
+entity_type: comment
+bundle: blog_comment
+label: 'Homepage of your website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
