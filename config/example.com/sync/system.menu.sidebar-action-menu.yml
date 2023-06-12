@@ -1,0 +1,8 @@
+uuid: 90c18f93-30cf-4687-af6b-d7644f688172
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar-action-menu
+label: 'sidebar action menu'
+description: ''
+locked: false

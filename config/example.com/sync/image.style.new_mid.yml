@@ -1,0 +1,15 @@
+uuid: 63b9460a-f0c4-4cd3-b1f8-16c39b195357
+langcode: en
+status: true
+dependencies: {  }
+name: new_mid
+label: new-mid
+effects:
+  4322a1bf-8584-40b4-9574-f626cc38a3b2:
+    uuid: 4322a1bf-8584-40b4-9574-f626cc38a3b2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      anchor: center-center

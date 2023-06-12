@@ -1,0 +1,35 @@
+uuid: 2007f425-bfc5-4cf9-81d1-104e0e4e19bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sidebar-action-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: sidebaractionmenu
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:sidebar-action-menu'
+settings:
+  id: 'system_menu_block:sidebar-action-menu'
+  label: 'sidebar action menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      hr: hr
+      blogger: blogger

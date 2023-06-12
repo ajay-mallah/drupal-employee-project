@@ -1,0 +1,21 @@
+uuid: 909eb73a-4b37-485b-a80d-81165a49e8e0
+langcode: en
+status: true
+dependencies: {  }
+id: user
+label: user
+code: |-
+  .profile-pic {
+  	width : 4rem;
+  	height: 4rem;
+  }
+
+  .user-profile{
+  	width: 4rem;
+  	height: 4rem;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

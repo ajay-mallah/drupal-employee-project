@@ -1,0 +1,31 @@
+uuid: 373ea1c9-2e9d-499e-9406-c402819884c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.background.field_background_icon
+    - field.field.paragraph.background.field_background_title
+    - paragraphs.paragraphs_type.background
+id: paragraph.background.default
+targetEntityType: paragraph
+bundle: background
+mode: default
+content:
+  field_background_icon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_background_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

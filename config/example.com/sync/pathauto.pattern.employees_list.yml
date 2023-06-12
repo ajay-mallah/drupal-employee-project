@@ -1,0 +1,14 @@
+uuid: 323c0292-d333-4fd6-a24d-3483afa564b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: employees_list
+label: 'employee list'
+type: 'canonical_entities:user'
+pattern: 'Employees/[user:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

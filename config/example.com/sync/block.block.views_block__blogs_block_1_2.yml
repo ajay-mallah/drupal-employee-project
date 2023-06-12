@@ -1,0 +1,26 @@
+uuid: df9c9424-3d97-43ee-bad5-cb33c6ecb195
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.blogs
+  module:
+    - views
+  theme:
+    - bootstrap5
+id: views_block__blogs_block_1_2
+theme: bootstrap5
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:blogs-block_1'
+settings:
+  id: 'views_block:blogs-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  exposed: {  }
+visibility: {  }
