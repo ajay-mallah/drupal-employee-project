@@ -9,7 +9,6 @@
 /web/sites/*/private
 /web/sites/*/files-public
 /web/sites/*/files-private
-/employees
 
 # Ignore paths that may contain temporary files
 /web/sites/*/translations
@@ -56,3 +55,11 @@
 /drush
 /drupal.phar
 /drupal
+
+/drush/Commands/contrib/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+/web/private/scripts/quicksilver
